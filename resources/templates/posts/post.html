@@ -1,0 +1,17 @@
+    <div class="post">
+        <div class="info">
+            <b>Author:</b> <span><%= data.username %></span><br>
+            <b>Date:</b> <span><%= data.created_at %></span>
+        </div>
+        <div class="message">
+            <span><%= data.message %></span>
+        </div>
+        <div class="action">
+                <a href="/post/view/<%= data.post_id %>" data-action="view" data-id="<%= data.post_id %>" class="action btn btn-primary btn-small">View</a>
+            <% if(user_id == data.user_id){%>
+                <a href="/post/edit/<%= data.post_id %>" data-action="edit" data-id="<%= data.post_id %>" class="action btn btn-warning btn-small">Edit</a>
+                <a href="/post/delete/<%= data.post_id %>" data-action="delete" data-id="<%= data.post_id %>" class="action btn btn-danger btn-small">Remove</a>
+            <% }; %>
+        </div>
+        <div style="clear:both;"></div>
+    </div>

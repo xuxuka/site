@@ -1,0 +1,19 @@
+Install
+    LAMP
+    PhpRedis
+    Redis
+    Node.js
+    Express for node.js
+
+Chmod 0777 for directory : /core/runtime/
+
+Configuration files:
+    /MainDbConfig.php
+    /resources/js/app/config.js
+    /resources/js/server/config.json
+
+Run sql files:
+    /sql/*
+
+Run file for node:
+    /resources/js/server/server.js

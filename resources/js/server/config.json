@@ -1,0 +1,32 @@
+{
+	"enable" : true,
+	"prefix": "notify",
+	"timerInterval": 5000,
+    "host" : "192.168.0.95",
+    "protocol" : "http",
+    "format" : ["html", "json"],
+	"node": {
+        "protocol" : "http",
+		"host": "192.168.0.95",
+		"port": 3000,
+		"AllowOrigin": "*",
+		"listen": "0.0.0.0",
+		"retry": 10000
+	},
+	"redis": {
+        "protocol" : "http",
+		"host": "127.0.0.1",
+		"port": 6379,
+		"db": 0,
+		"keyLifeTime": 300
+	},
+    "db" : {
+        "protocol" : "http",
+        "host": "192.168.0.95",
+        "port": 3306,
+        "user": "dima",
+        "password" : "1",
+        "database":"site",
+        "connectTimeout": 20
+    }
+}
